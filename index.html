@@ -6,13 +6,30 @@
 	<script src="first.js" defer></script>
 </head>
 <body>
-	<img src="../~rinde/media/pics/banner/vp_banner_2023.png" alt="Veebiprogrammeerimise kursuse bänner">
+	<img src="./public/banner/banner.png" alt="Veebiprogrammeerimise kursuse bänner">
 	<h1>Jan-Erich Sigur</h1>
 	<p>See veebileht on valminud <a href="https://www.tlu.ee/" target="_blank">TLÜ</a> Digitehnoloogiate instituudi informaatika eriala õppetöö raames.</p>
 	<hr>
 	<p>Ma ei tea mida siia kirjutada</p>
-	<p>Mul on üks <a href="../~carsepp/" target="_blank"> sõber</a> ka!</p>
+	<p>Mul on üks <a href="/~carsepp/vp23/" target="_blank"> sõber</a> ka!</p>
 	<hr>
+	<!-- method=post ei lase sisendil minna-->
+	<form method="post">
+		<label for="firstNameInput">Eesnimi: </label>
+		<input type="text" name="firstNameInput" id="firstNameInput" placeholder="Sinu eesnimi...">
+		<!-- id peab olema unikaalne ning ei tohi olla numbriga; id on seotud for'iga-->
+		<br> 
+		<br>
+		<label for="lastNameInput">Perekonnanimi: </label>
+		<input type="text" name="lastNameInput" id="lastNameInput" placeholder="Sinu perekonnanimi...">
+		<!--<br> veebilehel uuele reale-->
+		<br>
+		<input type="submit" name="nameSubmit" id="nameSubmit" value="Salvesta">
+		<script> document.getElementById("nameSubmit").addEventListener("click",function(){
+			alert("See töötab?");
+		});</script>
+		<!-- value= kiri nupu peal-->
+	</form>
 	<h2>Veebis saab kasutada</h2>
 	<ol>
 		<li>Teksti

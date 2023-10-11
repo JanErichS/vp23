@@ -1,10 +1,10 @@
 const firstName = "Jan-Erich";
 const lastName = "Sigur";
-const dateTimeValue = require("./dateTime_ET");
+const dateTimeValue = require("../dateTime_ET");
 const fs = require("fs");
 //let folkWisdom = ""; //tühi "" on tühi väärtus -> muudab globaasleks muutujaks, sest on funktsioonidest väljaspool.
 
-fs.readFile("txtfiles/vanasona.txt", "utf8", (err, data)=>{ //utf8 on est klava; 
+fs.readFile("../txtfiles/vanasona.txt", "utf8", (err, data)=>{ //utf8 on est klava; 
     if(err){
         console.log(err);
     }
